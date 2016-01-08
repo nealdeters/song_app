@@ -10,18 +10,25 @@ class List
     @songs << song
   end
   
-  def play
+  def play(songs = @songs)
     # @songs.each do |song|
     #   puts song.lyrics
     # end
-    @songs.each {|song| song.lyrics}
+
+    #@songs.each {|song| puts song.lyrics}
+    
+    songs.each {|song| puts song.lyrics}
   end
   
   def shuffle
     # @songs.shuffle.each do |song|
     #   puts song.lyrics
     # end  
-    @songs.shuffle.each {|song| puts song.lyrics}
+
+    #@songs.shuffle.each {|song| puts song.lyrics}
+
+    shuffled_list = @songs.shuffle
+    play(shuffled_list)
   end
   
   def duration
