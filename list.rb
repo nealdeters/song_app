@@ -18,9 +18,10 @@ class List
   end
   
   def shuffle
-    @songs.shuffle.each do |song|
-      puts song.lyrics
-    end  
+    # @songs.shuffle.each do |song|
+    #   puts song.lyrics
+    # end  
+    @songs.shuffle.each {|song| puts song.lyrics}
   end
   
   def duration
