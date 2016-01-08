@@ -11,9 +11,10 @@ class List
   end
   
   def play
-    @songs.each do |song|
-      puts song.lyrics
-    end
+    # @songs.each do |song|
+    #   puts song.lyrics
+    # end
+    @songs.each {|song| song.lyrics}
   end
   
   def shuffle
