@@ -2,7 +2,7 @@ require_relative "song"
 require_relative "list"
 
 # Create playlist
-playlist = List.new
+playlist = List.new("ItsMoneyBaby")
 
 # Create songs and add them to the list
 playlist.add_song(Song.new("Levels", "Avicii", 200, "Ooooo sometimes I get a good feeling..."))

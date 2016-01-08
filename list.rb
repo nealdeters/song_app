@@ -1,7 +1,8 @@
 class List
-  attr_reader :songs
+  attr_reader :songs, :name
 
-  def initialize
+  def initialize(name)
+    @name = name
     @songs = []
   end
 
